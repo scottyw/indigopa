@@ -1,4 +1,4 @@
-baseurl                 = "https://indigopa.co/"               # Your domain name. Must end with "/"
+baseurl                 = "https://indigopa.netlify.com/"               # Your domain name. Must end with "/"
 languageCode            = "en-gb"
 title                   = "IndigoPA"
 theme                   = "sam"
