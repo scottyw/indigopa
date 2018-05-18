@@ -1,32 +1,125 @@
-baseurl                 = "https://indigopa.co/"               # Your domain name. Must end with "/"
-languageCode            = "en-gb"
-title                   = "IndigoPA"
-theme                   = "sam"
-pygmentsStyle           = "manni"                     # https://help.farbox.com/pygments.html
-pygmentsCodefences      = true
-# googleAnalytics       = "xxx"             # Tracking code, eg. "UA-111111111-1"
+baseurl = "https://indigopa.co/"
+languageCode = "en-gb"
+title = "Indigo PA"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
 
 [params]
-    dateform            = "Mon Jan 02, 2006"
-    dateformfull        = "Mon Jan 2 2006 15:04:05 EST"
-    favicon             = "/sam.ico"
-    homepage            = "main"                        # What to call the home page link
-    galleryFolder       = "images/"                     # Where you've put your images, after "/content/gallery/"
-    clickablePhotos     = true                          # Allow links to the full size images
 
-# Metadata
-    description         = "IndigoPA"            # Max 160 characters show in search results
-    twitterCard         = "summary_large_image"         # Card value “summary”, “summary_large_image”, “app”, or “player”
-    primaryImage        = "/tn.png"                     # Image that shows on Twitter cards and OpenGraph links
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
 
-# [[params.mainMenu]]
-#     link = "/posts"
-#     text = "writing"
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
 
-# [[params.mainMenu]]
-#     link = "/gallery"
-#     text = "gallery"
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
 
-[[params.mainMenu]]
-    link = "/about"
-    text = "Welcome to IndigoPA"
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Indigo PA"
+	description = "Indigo PA provides a flexible on demand professional administration service. Administration support as and when you need it."
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+	# Navigation
+	[params.navigation]
+		brand = "Indigo PA"
+
+		[params.navigation.links]
+#			about     = "About"
+			services  = "Services"
+#			portfolio = "Portfolio"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Indigo PA"
+		subtitle   = "Indigo PA provides a flexible on demand professional administration service. Administration support as and when you need it."
+		buttonText = "Find out more"
+
+
+	# About section
+#	[params.about]
+#		headline    = "We've got what you need!"
+#		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
+#		buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = "Our services"
+
+        [[params.services.list]]
+            icon = "fa-laptop"
+            title = "Personal Assistant Support"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-calendar"
+            title = "Diary Scheduling"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-envelope"
+            title = "Email Management"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-file"
+            title = "HR and Recruitment Administration Support"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-database"
+            title = "DB Administration"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-search"
+            title = "Undertake Research"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-facebook-square"
+            title = "Social Media Support"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-plane"
+            title = "Travel Arrangements"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-list"
+            title = "Event Administration"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-calculator"
+            title = "Expense reports and Invoicing"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-keyboard-o"
+            title = "Project Administration"
+            description = ""
+
+        [[params.services.list]]
+            icon = "fa-mobile"
+            title = "Customer Support"
+            description = ""
+
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+		phone = "07814 694298"
+		email = "jennifer@indigopa.co"
